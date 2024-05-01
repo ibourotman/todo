@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+.App {
+  text-align: center;
+}
+
+
+
+.TodoWrapper {
+  background: #1A1A40;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+
+
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+
+ 

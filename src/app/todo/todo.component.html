@@ -1,0 +1,8 @@
+<div class="Todo">
+    <p [class.completed]="false" [class.incompleted]="true">{{task.description}}</p>
+    <div>
+      <fa-icon class="edit-icon" [icon]="faEdit" (click)="onEdit()"></fa-icon>
+      <fa-icon  class="delete-icon" [icon]="faTrash" (click)="Ondelete()"></fa-icon>
+      
+    </div>
+</div>
