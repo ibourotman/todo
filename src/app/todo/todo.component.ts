@@ -11,6 +11,7 @@ import { Todo } from '../shared/Todo.model';
 export class TodoComponent implements OnInit{
   faEdit = faEdit;
   faTrash = faTrash;
+  Completed:boolean = false
   @Input() task!:Todo;
   constructor(private todoSrv:TodoService){
   }
@@ -27,5 +28,8 @@ export class TodoComponent implements OnInit{
   }
   Ondelete(){
     this.todoSrv.deleteItem(this.task.id)
+  }
+  onCompleted(){
+    this.Completed = !this.Completed;
   }
 }
